@@ -4,6 +4,9 @@ import * as fcl from "@onflow/fcl"
 const AuthCluster = () => {
   const [user, setUser] = useState({loggedIn: null})
   useEffect(() => fcl.currentUser().subscribe(setUser), [])
+
+  console.log('user', user);
+
   if (user.loggedIn) {
     return (
       <div>
