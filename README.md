@@ -1,5 +1,6 @@
 # PinataParty
 Tutorial: How to Create NFTs Like NBA Top Shot With Flow and IPFS 
+
 Based on [tutorial](https://medium.com/pinata/how-to-create-nfts-like-nba-top-shot-with-flow-and-ipfs-701296944bf) by Justin Hunter
 
 ## Some commands
@@ -37,6 +38,11 @@ flow scripts execute --code ./scripts/CheckPinnieBalance.cdc
 Transfer Pinnie
 ```
 flow transactions send --code transactions/TransferPinnieTokens.cdc --signer emulator-account
+```
+
+List Token for Sale
+```
+flow transactions execute --code transactions/ListTokenForSale.cdc
 ```
 
 ### Generate account

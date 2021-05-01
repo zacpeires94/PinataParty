@@ -11,7 +11,7 @@ transaction {
         let collectionRef = acct.borrow<&PinataPartyContract.Collection>(from: /storage/NFTCollection)
             ?? panic("Could not borrow owner's nft collection reference")
 
-        let token <- collectionRef.withdraw(withdrawID: 2)
+        let token <- collectionRef.withdraw(withdrawID: 1)
 
         sale.listForSale(token: <-token, price: 10.0)
 
