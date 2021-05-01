@@ -1,5 +1,5 @@
 # PinataParty
-
+Tutorial: How to Create NFTs Like NBA Top Shot With Flow and IPFS 
 Based on [tutorial](https://medium.com/pinata/how-to-create-nfts-like-nba-top-shot-with-flow-and-ipfs-701296944bf) by Justin Hunter
 
 ## Some commands
