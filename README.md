@@ -18,3 +18,46 @@ Fetch metadata:
 ```
 flow scripts execute --code ./scripts/CheckTokenMetadata.cdc 
 ```
+
+Link Pinnie token:
+```
+flow transactions send --code ./transactions/LinkPinnie.cdc
+```
+
+Mint Pinnie
+```
+flow transactions send --code ./transactions/MintPinnie.cdc --signer emulator-account
+```
+
+Check balance
+```
+flow scripts execute --code ./scripts/CheckPinnieBalance.cdc
+```
+
+Transfer Pinnie
+```
+flow transactions send --code transactions/TransferPinnieTokens.cdc --signer emulator-account
+```
+
+### Generate account
+
+flow keys generate
+
+flow accounts create --key YourNewPublicKey
+
+To get AccountId:
+```flow transactions status YourTransactionId```
+
+Add 
+```
+"accounts": {
+  "emulator-account": {
+    "address": "f8d6e0586b0a20c7",
+    "keys": "e5ca2b0946358223f0555206144fe4d74e65cbd58b0933c5232ce195b9058cdd"
+  },
+  "second-account": {
+    "address": "<AccountID>",
+    "keys": "<AccountPrivateKey>"
+  }
+},
+```
